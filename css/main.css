@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --clr-red: #ea5353;
+  --clr-cyan: #45d3d3;
+  --clr-orange: #fcaf4a;
+  --clr-blue: #549ef2;
+  --clr-very-dark-blue: #4c4e61;
+  --clr-grayish-blue: #a3a5ae;
+  --clr-very-light-gray: #fafafa;
+  --clr-text-body: var(--clr-very-dark-blue);
+  /* Fonts Families */
+  --ff-primary: 'Poppins', sans-serif;
+  /* Fonts Sizes */
+  --fs-title: 2rem;
+  --fs-body: 0.9375rem;
+  /* Fonts Weight */
+  --fw-extra-thin: 200;
+  --fw-regular: 400;
+  --fw-semi-bold: 700;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  color: var(--clr-text-body);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    max-height: 200px;
+  }
+  to {
+    opacity: 0;
+    max-height: 0;
+  }
+}
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
