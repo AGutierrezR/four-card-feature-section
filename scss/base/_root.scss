@@ -4,17 +4,7 @@
   /* Colors */
   @each $type, $shade in $colors {
     @each $colorName, $value in $shade {
-      @if ($type != 'text' and $type != 'background') {
-        --clr-#{"" + $colorName}: #{$value};
-      }
-
-      @if ($type == 'text') {
-        --clr-#{"" + $type}-#{"" + $colorName}: #{$value};
-      }
-
-      @if ($type == 'background') {
-        --clr-#{"" + $type}-#{"" + $colorName}: #{$value};
-      }
+      --clr-#{"" + $colorName}: #{$value};
     }
   }
 
